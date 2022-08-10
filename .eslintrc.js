@@ -44,7 +44,14 @@ module.exports = {
     "react/jsx-curly-newline": "off", // jsx안에 }를 새로운 라인에 사용할 수 있다.
     "react/jsx-filename-extension": [
       1,
-      {extensions: [".js", ".jsx", ".tsx"]}, //jsx사용가능한 확장자 설정
+      { extensions: [".js", ".jsx", ".tsx"] }, //jsx사용가능한 확장자 설정
+    ],
+    "react/function-component-definition": [
+      2,
+      {
+        namedComponents: "arrow-function",
+        unnamedComponents: "arrow-function"
+      }
     ],
     "import/extensions": [
       "error",
